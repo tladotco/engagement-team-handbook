@@ -1,2 +1,5 @@
+permalink:           pretty
+relative_permalinks: true
 sass:
-style: compressed
+  sass_dir:          _scss
+  style:            :compressed
