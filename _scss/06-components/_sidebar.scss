@@ -1,0 +1,38 @@
+﻿/// <reference path="../01-settings/settings" />
+/// <reference path="../02-tools/tools" />
+
+.sidebar {
+    @include media-breakpoint-up(md) {
+        position: fixed;
+        width: $side-bar-width-lg;
+
+        .navigation {
+            display: block;
+        }
+    }
+
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: $brand-primary;
+    color: $brand-primary-text;
+    padding: 2rem;
+    overflow: hidden;
+
+    &--active {
+        position: fixed;
+        width: 100%;
+
+        .navigation {
+            display: block;
+        }
+    }
+
+    a {
+        color: $brand-primary-text;
+
+        &:hover {
+            color: $brand-primary-alt;
+        }
+    }
+}

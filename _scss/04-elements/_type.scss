@@ -1,0 +1,91 @@
+/// <reference path="../01-settings/settings" />
+
+// To set custom fonts see ../01-settings/_type.scss.
+
+@if ($font-heading-directory) {
+
+    $font-heading-path: '../_fonts/#{$font-heading-directory}';
+
+    @each $file-name, $weight, $style in $heading-custom-font-variants {
+        @font-face {
+            font-family: $font-name-heading;
+            src: url('#{$font-heading-path}/#{$file-name}.woff2') format('woff2'), url('#{$font-heading-path}/#{$file-name}.woff') format('woff'), url('#{$font-heading-path}/#{$file-name}.ttf') format('truetype');
+            font-weight: $weight;
+            font-style: $style;
+        }
+    }
+}
+
+@if ($font-body-directory) {
+    $font-body-path: '../_fonts/#{$font-body-directory}';
+
+    @each $file-name, $weight, $style in $body-custom-font-variants {
+        @font-face {
+            font-family: $font-name-body;
+            src: url('#{$font-body-path}/#{$file-name}.woff2') format('woff2'), url('#{$font-body-path}/#{$file-name}.woff') format('woff'), url('#{$font-body-path}/#{$file-name}.ttf') format('truetype');
+            font-weight: $weight;
+            font-style: $style;
+        }
+    }
+}
+
+html {
+    font-size: 20px;
+}
+
+h1, .h1 {
+    @include media-breakpoint-up(md) {
+        font-size: 6rem;
+    }
+}
+
+mark {
+    background-color: transparent;
+    color: $brand-primary;
+    padding: 0;
+}
+
+blockquote {
+    position: relative;
+    border: $input-border-color solid 1px;
+    margin: 5px;
+    border-radius: $border-radius;
+    padding: 30px;
+
+    &::after,
+    &::before {
+        content: '';
+        position: absolute;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url('/img/quote.svg');
+        width: 16px;
+        height: 14px;
+    }
+
+    &::before {
+        top: 30px;
+        left: 10px;
+    }
+
+    &::after {
+        top: 30px;
+        right: 10px;
+        transform: rotate(180deg);
+    }
+
+    cite {
+        display: block;
+        margin-top: 3rem;
+        font-weight: bold;
+        font-style: normal;
+    }
+}
+
+legend {
+    font-size: 1rem;
+}
+
+small {
+    display: inline-block;
+}

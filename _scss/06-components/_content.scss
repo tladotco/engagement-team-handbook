@@ -1,0 +1,17 @@
+﻿/// <reference path="../01-settings/settings" />
+/// <reference path="../02-tools/tools" />
+
+.content {
+    padding: 2rem;
+
+    @include media-breakpoint-up(md) {
+        padding-left: $side-bar-width-lg + 2rem;
+    }
+
+
+    img,
+    picture,
+    figcaption {
+        margin-bottom: 1rem;
+    }
+}

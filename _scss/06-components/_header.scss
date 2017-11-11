@@ -1,0 +1,16 @@
+﻿/// <reference path="../01-settings/settings" />
+/// <reference path="../02-tools/tools" />
+
+.header {
+    color: $brand-primary-text;
+
+    &__title {
+        color: inherit;
+        font-size: $h3-font-size
+    }
+
+    &__subtitle {
+        color: inherit;
+        font-size: $h4-font-size
+    }
+}

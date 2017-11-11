@@ -1,0 +1,14 @@
+$brand-primary: #EE1C3A;
+$brand-primary-accent: #E74C3C;
+$brand-primary-alt: #D35400;
+$brand-primary-text: #FFF;
+
+$brand-secondary: #BEBEBE;
+$brand-secondary-accent: darken($brand-secondary, 10);
+$brand-secondary-alt: lighten($brand-secondary, 10);
+$brand-secondary-text: $body-color;
+
+$brand-tertiary: $black;
+$brand-tertiary-accent: lighten($brand-tertiary, 10);
+$brand-tertiary-alt: lighten($brand-tertiary, 30);
+$brand-tertiary-text: #FFF;

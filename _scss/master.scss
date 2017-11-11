@@ -1,0 +1,8 @@
+//The styles in this project are structured according to ITCSS, see: https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/
+@import '01-settings/settings';
+@import '02-tools/tools';
+@import '03-generic/generic';
+@import '04-elements/elements';
+@import '05-objects/objects';
+@import '06-components/components';
+@import '07-trumps/trumps';

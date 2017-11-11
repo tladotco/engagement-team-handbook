@@ -1,0 +1,30 @@
+// Font face is in elements/_type.
+$font-name-body: null;
+// ./fonts/$font-body-directory
+$font-body-directory: null;
+$font-name-heading: 'Brandon Grotesque';
+$font-heading-directory: BrandonGrotesque;
+
+$headings-font-weight: $font-weight-bold;
+
+$font-family-sans-serif: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+$font-family-base: $font-name-body, #{$font-family-sans-serif};
+$headings-font-family: $font-name-heading, #{$font-family-sans-serif};
+
+$headings-color: $black;
+$body-color: $black;
+
+$line-height: 2.5;
+
+// To set custom fonts:
+// 1. Copy TTF fonts into their own font-directory, have your file variants in this directory.
+// 2. set the directory names above for the custom fonts you wan to support.
+// 3. Set the "CSS" name of the font (above).
+// 4. Below set the filename, weight and style of the variant you need to support.
+// 5. Gulp & SASS does the rest of the magic!
+
+$body-custom-font-variants: ( ('regular', normal, normal), ('italic', normal, italic), ('bold', bold, normal)) !default;
+$heading-custom-font-variants: ( ('extabold', bolder, normal)) !default;
+
+$link-color: $brand-primary;
+$link-hover-color: $brand-primary-accent;

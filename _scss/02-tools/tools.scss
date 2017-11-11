@@ -1,0 +1,5 @@
+@import '../bootstrap/mixins';
+
+@mixin brand-primary-gradient {
+    @include gradient-directional($brand-primary-alt, $brand-primary-accent, 180deg)
+}

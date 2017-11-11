@@ -1,0 +1,11 @@
+﻿/// <reference path="../01-settings/settings" />
+/// <reference path="../02-tools/tools" />
+
+.navigation {
+
+    &__list {
+        @include list-unstyled;
+        display: inline;
+        padding: 1rem;
+    }
+}
