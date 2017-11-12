@@ -11,23 +11,13 @@
     <nav class="navigation">
         <ul class="navigation__list">
             <li>
-                <a href="#">Welcome</a>
+                <a href="/">Welcome</a>
             </li>
+            {% for item in site.my_collection %}
             <li>
-                <a href="#">About us</a>
+                <a href="{{ item.url }}">{{ item.title }}</a>
             </li>
-            <li>
-                <a href="#">Starting Out</a>
-            </li>
-            <li>
-                <a href="#">Code</a>
-            </li>
-            <li>
-                <a href="#">Builds</a>
-            </li>
-            <li>
-                <a href="#">Release</a>
-            </li>
+            {% endfor %}
         </ul>
     </nav>
     <footer class="footer">
