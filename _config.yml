@@ -3,7 +3,3 @@ permalink:      pretty
 source:         "."
 
 encoding:       UTF-8
-
-sass:
-  sass_dir:          _scss
-  style:            :compressed
