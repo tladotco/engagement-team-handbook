@@ -1,7 +1,6 @@
 ﻿---
-title: Welcome
-permalink: welcome
 layout: master
+title: Welcome
 ---
 
 # Welcome
