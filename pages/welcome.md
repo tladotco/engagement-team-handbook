@@ -1,4 +1,4 @@
-﻿---
+---
 title: Welcome
 permalink: welcome
 layout: master

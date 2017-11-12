@@ -1,4 +1,4 @@
-﻿---
+---
 layout: master
 title: Welcome
 ---
