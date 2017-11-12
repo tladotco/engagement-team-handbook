@@ -6,5 +6,5 @@ encoding:       UTF-8
 
 collections:
   docs:
-    permalink: /:collection/:path/
+    permalink: /:path/
     output: true
