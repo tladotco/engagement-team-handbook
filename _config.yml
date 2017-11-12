@@ -8,7 +8,3 @@ collections:
   docs:
     permalink: /:collection/:path/
     output: true
-
-exclude:
-  - _sass/
-  - css/
