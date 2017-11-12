@@ -3,3 +3,12 @@ permalink:      pretty
 source:         "."
 
 encoding:       UTF-8
+
+collections:
+  docs:
+    permalink: /:collection/:path/
+    output: true
+
+exclude:
+  - _sass/
+  - css/
