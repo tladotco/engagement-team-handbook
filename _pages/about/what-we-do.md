@@ -1,9 +1,7 @@
 ---
-title: What We Do
+title: We Are The Engagement Team
 layout: master
 ---
-
-# We Are: The Engagement Team
 
 We're part of the wider development team here at The Lead Agency, with over ten people in a department of over twenty. We represent the development side of the Engagement Tribe of the business and work closely with our fellow tribe members in Marketing & Design. This cross slice allows us to work closer with our tribe mates, towards the same goals.
 

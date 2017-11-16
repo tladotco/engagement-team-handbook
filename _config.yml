@@ -5,8 +5,3 @@ permalink:      /:title/
 source:         "."
 
 encoding:       UTF-8
-
-collections:
-  docs:
-    permalink: /:collection/:path/
-    output: 

@@ -1,9 +1,7 @@
 ---
-title: Working with Source Control
+title: Source Control
 layout: master
 ---
-
-# Working with Source Control
 
 ## Branching
 

@@ -3,8 +3,6 @@ title: Jira
 layout: master
 ---
 
-# Jira
-
 This will be a short run through of the Jira process we adopt. The Wiki contains more extensive details on its use, experience will also help with this.
 
 - All work, however small, is managed via Jira.

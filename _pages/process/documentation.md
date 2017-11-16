@@ -3,8 +3,6 @@ title: Documentation
 layout: master
 ---
 
-# Documentation
-
 Documentation is really important, we have a lot of systems and a lot of different people with different skills. We love to include documentation as part of a project and subsequently code reviews. To do this we use the README in the root of the document.
 
 This is a great [tool](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.MarkdownEditor) for editing [markdown in Visual Studio](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). Here is a markdown cheat sheet that should help.
