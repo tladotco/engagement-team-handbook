@@ -1,7 +1,6 @@
 ---
 title: Best Practices
 layout: master
-permalink: /best--practices
 ---
 
 # Best Practices

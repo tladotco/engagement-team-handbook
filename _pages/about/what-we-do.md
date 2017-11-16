@@ -1,7 +1,6 @@
 ---
 title: What We Do
 layout: master
-permalink: /what-we-do 
 ---
 
 # We Are: The Engagement Team

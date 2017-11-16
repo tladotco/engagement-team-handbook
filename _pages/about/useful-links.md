@@ -1,7 +1,6 @@
 ---
 title: Useful Links
-layout: master
-permalink: /useful-links 
+layout: master 
 ---
 
 # Useful Links

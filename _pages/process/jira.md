@@ -1,7 +1,6 @@
 ---
 title: Jira
 layout: master
-permalink: /process/jira
 ---
 
 # Jira

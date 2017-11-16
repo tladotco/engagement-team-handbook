@@ -1,7 +1,6 @@
 ---
 title: Documentation
 layout: master
-permalink: /documentation
 ---
 
 # Documentation

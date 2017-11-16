@@ -1,7 +1,6 @@
 ---
 title: System Deployment
 layout: master
-permalink: /dev-ops
 ---
 
 # System Deployment

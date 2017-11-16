@@ -1,7 +1,6 @@
 ---
 title: Working with Source Control
 layout: master
-permalink: /source-control
 ---
 
 # Working with Source Control

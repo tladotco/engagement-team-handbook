@@ -1,7 +1,6 @@
 ---
 title: Code Reviews
 layout: master
-permalink: /code-reviews
 ---
 
 # Code Reviews
