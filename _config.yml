@@ -1,4 +1,4 @@
-include: ["_pages"]
+include: ["_pages", "fonts"]
 
 permalink:      /:title/
 
