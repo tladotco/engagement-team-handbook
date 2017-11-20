@@ -17,7 +17,7 @@ We can always optimise later!
 
 ### Markup
 
-- Always use the correct semantics, always use HTML5.
+- Always use the correct semantics, always use HTML5
     - Remember your form attributes
     - There is a _lot_ of elements to use - [cheetsheet](https://www.wpkube.com/wp-content/uploads/2017/09/html-chatsheet.pdf).
 - Avoid using `H1` elements more than once on a page
@@ -28,7 +28,7 @@ We can always optimise later!
 - Always use ES6 (or latest) JavaScript and run through Babel
 - Prefix your framework specific variables (in mixed framework projects), e.g `$mySelector` for jQuery
 - Don't pollute global namespaces
-    -  know your variable scope
+    -  know your [scope](https://github.com/getify/You-Dont-Know-JS/tree/master/scope%20%26%20closures)
     -  see [module pattern](https://addyosmani.com/resources/essentialjsdesignpatterns/book/#modulepatternjavascript)
 - Follow best practices of the framework you are using
 - Debounce your scroll and resize events
