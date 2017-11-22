@@ -12,6 +12,6 @@
   - code-reviews
 - title: Best Practices
   docs:
-  - general
-  - front-end
-  - back-end
+  - general-best-practices
+  - front-end-best-practices
+  - back-end-best-practices

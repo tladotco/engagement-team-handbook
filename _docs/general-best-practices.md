@@ -1,5 +1,5 @@
 ---
-title: Front End
+title: General
 ---
 
 We work across a lot of different systems and technologies, so it's important we follow industry best practices that have been tinkered to work within our team. It makes us better developers and more importantly encourages consistency across projects. Every effort should be made to automate this where possible, this is why we use linters to spy out issues before they even get committed.

@@ -1,6 +1,5 @@
 ---
 title: Back End
-layout: master
 ---
 
 - Follow Microsoft coding conventions, we use StyleCop to assist with this
@@ -10,16 +9,16 @@ layout: master
     - Use IoC
     - Single responsibility is important - use layers: service, data etc.
 
-### MVC
+## MVC
 
 - Keep views and controllers light, if it's not it needs a service
 - ViewModels over ViewBag
 
-### Umbraco
+## Umbraco
 
 - Prefer strongly typed models
 - When using models builder, use the API version
 
-### RESTful APIs
+## RESTful APIs
 
 We follow Microsoft [RESTful API Guidelines](https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md), for full best practices see our [guide](http://wiki.theautonetwork.net/display/DT/RESTful+API) in the Wiki.

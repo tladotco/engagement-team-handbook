@@ -1,7 +1,7 @@
 ---
 title: Front End
 ---
-### Markup
+## Markup
 
 - Always use the correct semantics, always use HTML5
     - Remember your form attributes
@@ -9,7 +9,7 @@ title: Front End
 - Avoid using `H1` elements more than once on a page
 - Avoid viewport specific markup
 
-### Scripts
+## Scripts
 
 - Always use ES6 (or latest) JavaScript and run through Babel
 - Prefix your framework specific variables (in mixed framework projects), e.g `$mySelector` for jQuery
@@ -20,7 +20,7 @@ title: Front End
 - Debounce your scroll and resize events
 - Try to load scripts via `async` (preferably) or `defer` attributes
 
-### Styles
+## Styles
 
 - Use SASS in combination with BEM naming conventions. 
 - Use [company SASS lint rules](/assets/tla-sass-lint-config.json) to lint your SASS
@@ -28,33 +28,9 @@ title: Front End
 - Use CSS3 for transitions, animations or changes to presentation - not JS
 - Use the [ITCSS](https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture) folder structure
 
-### Node & Gulp
+## Node & Gulp
 
 - Follow the standard gulp workflow for processing assets, ensuring your public folder is *ignored* from source control ![Gulp work flow. Source folder is processed by Gulp, and put into a public folder at build time](/image/gulp-workflow.png)
 - Save dependencies correctly (dependent on project/framework): `--save-dev` over `--save`
 - Minify assets and apply source mappings
 - Use the [`gulp-load-plugins`](https://www.npmjs.com/package/gulp-load-plugins) package to automatically load gulp packages without the need for requiring every one
-
-
-## Server Side
-
-- Follow Microsoft coding conventions, we use StyleCop to assist with this
-- (Going forwards) SonarQube is used in builds to identify Bugs & Code Smells. SonarQube quality gates ensure code can only get better!
-    - [SonarQube lint](https://marketplace.visualstudio.com/items?itemName=SonarSource.SonarLintforVisualStudio2017) extension for Visual Studio
-- Try to follow [SOLID](https://scotch.io/bar-talk/s-o-l-i-d-the-first-five-principles-of-object-oriented-design) principles. Importantly:
-    - Use IoC
-    - Single responsibility is important - use layers: service, data etc.
-
-### MVC
-
-- Keep views and controllers light, if it's not it needs a service
-- ViewModels over ViewBag
-
-### Umbraco
-
-- Prefer strongly typed models
-- When using models builder, use the API version
-
-### RESTful APIs
-
-We follow Microsoft [RESTful API Guidelines](https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md), for full best practices see our [guide](http://wiki.theautonetwork.net/display/DT/RESTful+API) in the Wiki.
