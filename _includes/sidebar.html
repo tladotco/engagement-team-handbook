@@ -5,13 +5,10 @@
     </header>
     <nav class="navigation">
         {% for section in site.data.docs %}
-            <h2 class="navigation__category">{{ section.title }}</h4>
+        <h2 class="navigation__category">{{ section.title }}</h4>
             {% include navigation.html items=section.docs %} {% endfor %}
     </nav>
-</aside>
-
-</nav>
-<footer class="footer">
-    <small>© The Lead Agency 2017</small>
-</footer>
+    <footer class="footer">
+        <small>© The Lead Agency 2017</small>
+    </footer>
 </aside>

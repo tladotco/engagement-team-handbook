@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <title>{{page.title}}</title>
@@ -11,11 +12,19 @@
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="{{ site.baseurl }}/css/master.css">
 </head>
+
 <body>
-    {% include sidebar.html %}
-    <main class="content">
-        <h1>{{ page.title }}</h1>
-        {{ content }}
-    </main>
+    <div class="wrapper">
+        <div class="wrapper__sidebar">
+            {% include sidebar.html %}
+        </div>
+        <div class="wrapper__content">
+            <main class="content">
+                <h1>{{ page.title }}</h1>
+                {{ content }}
+            </main>
+        </div>
+    </div>
 </body>
+
 </html>

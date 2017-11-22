@@ -2,12 +2,8 @@
 /// <reference path="../02-tools/tools" />
 
 .content {
-    padding: 2rem;
-
-    @include media-breakpoint-up(md) {
-        padding-left: $side-bar-width-lg + 2rem;
-    }
-
+    @include make-container;
+    @include make-container-max-widths;
 
     img,
     picture,
