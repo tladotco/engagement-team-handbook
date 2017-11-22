@@ -1,6 +1,5 @@
 ---
 title: System Deployment
-layout: master
 ---
 
 We maintain a minimum of three environments per system:

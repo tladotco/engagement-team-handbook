@@ -2,10 +2,38 @@
 /// <reference path="../02-tools/tools" />
 
 .navigation {
+    padding: 2rem 0;
 
     &__list {
         @include list-unstyled;
         display: inline;
         padding: 1rem;
+    }
+
+    &__category {
+        color: inherit;
+        margin: 0;
+        font-size: $h5-font-size;
+    }
+
+    &__page {
+        
+        a {
+            color: inherit;
+            &:hover {
+                color: $brand-primary;
+            }
+        }
+
+        &--active {
+        
+                color: $brand-primary;
+                    &::after {
+                        margin-right: -20px;
+                        content: '›';
+                        font-weight: bold;
+                        font-size: 125%;
+                    }
+                }
     }
 }

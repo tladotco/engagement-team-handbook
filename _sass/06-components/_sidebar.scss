@@ -5,6 +5,7 @@
     @include media-breakpoint-up(md) {
         position: fixed;
         width: $side-bar-width-lg;
+        text-align: right;
 
         .navigation {
             display: block;
@@ -14,9 +15,9 @@
     top: 0;
     left: 0;
     bottom: 0;
-    background-color: $brand-primary;
-    color: $brand-primary-text;
-    padding: 2rem;
+    background-color: $brand-secondary;
+    color: $brand-secondary-text;
+    padding: 3rem;
     overflow: hidden;
 
     &--active {
@@ -25,14 +26,6 @@
 
         .navigation {
             display: block;
-        }
-    }
-
-    a {
-        color: $brand-primary-text;
-
-        &:hover {
-            color: $brand-primary-alt;
         }
     }
 }

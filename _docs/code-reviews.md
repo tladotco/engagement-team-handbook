@@ -1,6 +1,5 @@
 ---
 title: Code Reviews
-layout: master
 ---
 
 Code reviews are an important step in our process. They are a two way process, someone can learn something from you or you can learn something from them. The aim of a code review is to:

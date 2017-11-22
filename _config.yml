@@ -1,7 +1,25 @@
-include: ["_pages", "fonts"]
+sass:
+  style: compressed
 
-permalink:      /:title/
+include: ["_pages", "_fonts"]
+
+defaults:
+  -
+    scope:
+      path: "_docs"
+      type: "docs"
+    values:
+      layout: "master"
+
+collections:
+  docs:
+    permalink: /:collection/:path/
+    output: true
 
 source:         "."
 
 encoding:       UTF-8
+
+exclude:
+  - .gitignore
+  - README.md

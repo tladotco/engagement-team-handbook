@@ -1,0 +1,17 @@
+- title: Getting Started
+  docs:
+  - what-we-do
+  - team-aims
+  - useful-links
+- title: Process
+  docs:
+  - best-practices
+  - source-control
+  - jira
+  - documentation
+  - code-reviews
+- title: Best Practices
+  docs:
+  - general
+  - front-end
+  - back-end

@@ -1,26 +1,17 @@
 ﻿<aside class="sidebar">
     <header class="header">
-        <div class="media">
-            <div class="media__body">
-                <h1 class="header__title">The Lead Agency</h1>
-                <h2 class="header__subtitle">Engagement Team</h2>
-            </div>
-            <img alt="TLA Logo" src="http://www.theleadagency.com/wp-content/uploads/2017/04/logo-white2.png" />
-        </div>
+        <img class="header__image" width="300" alt="TLA Logo" src="/image/logo-white.png" />
+        <h1 class="header__title">Engagement Team</h2>
     </header>
     <nav class="navigation">
-        <ul class="navigation__list">
-            <li>
-                <a href="/">Welcome</a>
-            </li>
-            {% for item in site.pages %}
-            <li>
-                <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
-            </li>
-            {% endfor %}
-        </ul>
+        {% for section in site.data.docs %}
+            <h2 class="navigation__category">{{ section.title }}</h4>
+            {% include navigation.html items=section.docs %} {% endfor %}
     </nav>
-    <footer class="footer">
-        <small>The Lead Agency 2017</small>
-    </footer>
+</aside>
+
+</nav>
+<footer class="footer">
+    <small>© The Lead Agency 2017</small>
+</footer>
 </aside>
