@@ -30,7 +30,7 @@ title: Front End
 
 ## Node & Gulp
 
-- Follow the standard gulp workflow for processing assets, ensuring your public folder is *ignored* from source control ![Gulp work flow. Source folder is processed by Gulp, and put into a public folder at build time](image/gulp-workflow.png)
+- Follow the standard gulp workflow for processing assets, ensuring your public folder is *ignored* from source control ![Gulp work flow. Source folder is processed by Gulp, and put into a public folder at build time]({{ site.baseurl}}/image/gulp-workflow.png)
 - Save dependencies correctly (dependent on project/framework): `--save-dev` over `--save`
 - Minify assets and apply source mappings
 - Use the [`gulp-load-plugins`](https://www.npmjs.com/package/gulp-load-plugins) package to automatically load gulp packages without the need for requiring every one

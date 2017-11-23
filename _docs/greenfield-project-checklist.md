@@ -8,7 +8,7 @@ Here is a check list of steps to ensure your new project is consistent with the 
 
 See [source control](/docs/source-control) for details on branching strategies. As a minimum there should be a develop and master branch which trigger builds
 
-![Gitflow and build triggers as used by TLA](image/tla-gitflow.svg)
+![Gitflow and build triggers as used by TLA]({{ site.baseurl}}/image/tla-gitflow.svg)
 
 - Create new project (if needed)
     - Projects should be per product / major grouping

@@ -14,4 +14,9 @@
     ol {
         margin-bottom: 2rem;
     }
+
+    img,
+    picture {
+        @include img-fluid;
+    }
 }
