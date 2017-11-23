@@ -1,5 +1,5 @@
 ---
-title: Logging
+title: Incident Response
 ---
 
 No one likes incidents, but the key thing is the *keep calm*. Follow these general steps:
@@ -24,3 +24,5 @@ No one likes incidents, but the key thing is the *keep calm*. Follow these gener
 # Other
 
 2. Same as above, no need to notify product tech owner
+
+The aim of the above is to ensure everyone who needs to make informed decisions can make them. The longer communication is left, the worse things can get. Logging the steps you have taken means even if a hotfix is applied, we can still walk through the steps at a later date and ensure we can either apply a better fix based on this information or, clean up any failed attempts to fix something.
