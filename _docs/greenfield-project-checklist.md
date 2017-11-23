@@ -6,7 +6,7 @@ Here is a check list of steps to ensure your new project is consistent with the 
 
 ## TFS Project & Source Control
 
-See [source control](/docs/source-control) for details on branching strategies. As a minimum there should be a develop and master branch which trigger builds
+See [source control]({{ site.baseurl}}/docs/source-control) for details on branching strategies. As a minimum there should be a develop and master branch which trigger builds
 
 ![Gitflow and build triggers as used by TLA]({{ site.baseurl}}/image/tla-gitflow.svg)
 
@@ -48,13 +48,13 @@ See [source control](/docs/source-control) for details on branching strategies. 
 
 ## Project
 
-- Project follows best practices for [front](/docs/front-end-best-practices) & [back](/docs/front-end-best-practices)
+- Project follows best practices for [front]({{ site.baseurl}}/docs/front-end-best-practices) & [back]({{ site.baseurl}}/docs/front-end-best-practices)
     -  Has appropriate lint programs
     -  Has folder structure in place
     -  Git ignores in place
 -  Add Application insights (see DevOps for creating insights account)
 -  Added logging middleware
--  Added [documentation](/docs/documentation) template (README to root)
+-  Added [documentation]({{ site.baseurl}}/docs/documentation) template (README to root)
 
 ## Dev Ops
 

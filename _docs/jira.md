@@ -17,7 +17,7 @@ This will be a short run through of the Jira process we adopt. The Wiki contains
 ## Reviewing Work
 
 1. Set your name in the reviewer field - this stops anyone reviewing work at the same time as you
-2. Perform review, see [Code Reviews](docs/code-reviews/) for more info.
+2. Perform review, see [Code Reviews]({{ site.baseurl}}/docs/code-reviews/) for more info.
 3. Happy, transition to the next step as is appropriate for the work
 3. Not happy? Fail the review, list reasons for failure in ticket comments
  
