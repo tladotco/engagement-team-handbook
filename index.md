@@ -1,5 +1,6 @@
 ---
 title: Welcome
+layout: master
 ---
 
 Welcome to the team, friend! This page is a handy run through all pages to visit and see, step-by-step, to get you up to speed with working with us. The aim of the handbook is to give you all the information you need to perform your tasks; it walks you through the team, through our processes and highlights our best practices. 
