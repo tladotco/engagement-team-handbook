@@ -2,10 +2,7 @@
 /// <reference path="../02-tools/tools" />
 
 .navigation {
-    padding: 2rem 0;
-
     max-height: 80vh;
-    overflow: auto;
 
     &__list {
         @include list-unstyled;
@@ -31,6 +28,8 @@
         &--active {
         
                 color: $brand-primary;
+                @include media-breakpoint-up(md)
+                {
                     &::after {
                         margin-right: -20px;
                         content: '›';
@@ -38,5 +37,6 @@
                         font-size: 125%;
                     }
                 }
+            }
     }
 }

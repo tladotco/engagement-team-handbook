@@ -17,7 +17,7 @@ So what about us? The Lead Agency is all about cutting edge, lead generation. Li
 
 We can split our work out into three parts; sites, ads & chatbots.
 
-## Sites
+### Sites
 
 We several main sites, and a lot of smaller partner projects we do for clients. Like business older than 15 years, we do have legacy, we aim to have all sites on Umbraco and there are active projects planned into to progress this.
 
@@ -26,10 +26,10 @@ We several main sites, and a lot of smaller partner projects we do for clients. 
 - [The Study Network](https://www.thestudynetwork.com/) [Education] : Orchard
 - [Askaprice](https://www.askaprice.com/) [Automotive]: Legacy web forms framework
 
-## Ads
+### Ads
 
 We have built our own ad delivery network that allows us to partner up with clients and deliver more traffic to our main sites. The work we have done around this is entirely aimed at performance. We are scrape pages where ads are placed, calculate what products are being written about and precisely deliver a related ad. We use Microservices & CosmosDB to us to cache pages, and then deliver ads in under 100ms.
 
-## Chat Bots
+### Chat Bots
 
 Our newest addition to the family is chat bots. This is our pioneering RnD project that we're prototyping across our sites (and soon partners sites) to deliver an authentic chat system which can be delivered through our own chat UI or via out systems like Facebook Messenger.

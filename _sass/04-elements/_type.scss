@@ -29,59 +29,27 @@
     }
 }
 
-h1, .h1 {
-    @include media-breakpoint-up(md) {
-        font-size: 5rem;
-    }
+html {
+    font-size: 18px
 }
 
-mark {
-    background-color: transparent;
-    color: $brand-primary;
-    padding: 0;
+h1, .h1 {
+    @include media-breakpoint-up(md) {
+        font-size: 4rem;
+        margin-bottom: 3rem;
+    }
 }
 
 blockquote {
-    position: relative;
-    border: $input-border-color solid 1px;
-    margin: 5px;
-    border-radius: $border-radius;
-    padding: 30px;
-
-    &::after,
-    &::before {
-        content: '';
-        position: absolute;
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-image: url('/img/quote.svg');
-        width: 16px;
-        height: 14px;
-    }
-
-    &::before {
-        top: 30px;
-        left: 10px;
-    }
-
-    &::after {
-        top: 30px;
-        right: 10px;
-        transform: rotate(180deg);
-    }
-
-    cite {
-        display: block;
-        margin-top: 3rem;
-        font-weight: bold;
-        font-style: normal;
-    }
-}
-
-legend {
-    font-size: 1rem;
+    border-left: $input-border-color solid 1px;
+    margin-bottom: 1rem;
+     padding-left: 1rem;
 }
 
 small {
     display: inline-block;
+}
+
+p {
+    margin-bottom: 2rem;
 }
