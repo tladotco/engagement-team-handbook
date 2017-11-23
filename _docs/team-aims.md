@@ -2,5 +2,4 @@
 title: Team Aims
 ---
 
-- Quality before delivery
-- ...
+- To be decided by the team
