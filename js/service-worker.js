@@ -1,5 +1,5 @@
 var filesToCache = [
-    '/',
+    '/engagement-team-handbook/',
     '/engagement-team-handbook/css/master.css',
     '/engagement-team-handbook/image/logo-mob.png',
     '/engagement-team-handbook/image/logo-white.png',
