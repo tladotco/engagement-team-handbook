@@ -66,18 +66,8 @@ etc..]
 ## API Name
  
 GET : `url/to/your/call`
-Sample request:
-``` json
-{
-    "property" : "value"
-}
-```
-Sample Response:
-``` json
-{
-    "property" : "value"
-}
-```
+[Sample request]
+
 # Workflow, Build & Tests
 ## Workflow
 [What source control work flow does this project use?]

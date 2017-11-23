@@ -1,6 +1,5 @@
 ---
 title: Useful Links
-layout: master 
 ---
 
 Many of these links can only be accessed from the network (either in the office or an the VPN) and/or with a valid AD account.
