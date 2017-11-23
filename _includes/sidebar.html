@@ -1,7 +1,14 @@
-﻿<aside class="sidebar">
+﻿<aside class="sidebar" >
     <header class="header">
-        <img class="header__image" width="300" alt="TLA Logo" src="image/logo-white.png" />
-        <h1 class="header__title">Engagement Team</h2>
+        <picture class="header__image">
+            <source width="60" srcset="image/logo-mob.png" media="(max-width: 768px)"></source>
+            <img  width="300" height="133" alt="TLA Logo" src="image/logo-white.png" />
+        </picture>
+        <h1 class="header__title">Engagement Team</h1>
+        <a class="header__toggle-icon" data-toggle="header" onclick="document.querySelector('.sidebar').classList.toggle('sidebar--active');" role="button">
+            <span class="sr-only">Toggle Main Menu</span>
+            <i class="header__menu-icon"></i>
+        </a>
     </header>
     <nav class="navigation">
         {% for section in site.data.docs %}

@@ -2,14 +2,95 @@
 /// <reference path="../02-tools/tools" />
 
 .header {
+    @include media-breakpoint-up(md){ 
+        display: block;
+        position: static;
+    }
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     color: $brand-primary-text;
 
     &__title {
-        color: inherit;
+        @include media-breakpoint-up(md){ 
         font-size: $h3-font-size
+        }
+        font-size: 1.2rem;
+        color: inherit;
     }
 
     &__image {
-        margin-bottom: 15px;
+        @include media-breakpoint-up(md){
+            margin-bottom: 15px;
+            width: auto;
+            height: auto;
+        }
+
+        display: block;
+        width: 60px;
+        height: 60px;
+
+        img {
+            width: auto;
+            height: auto;
+        }
+    }
+
+    &__toggle-icon {
+        @include media-breakpoint-up(md){ 
+            display: none;
+        }
+
+        display: flex;
+        align-items: center;
+        padding: 7px;
+    }
+
+    &__menu-icon-text {
+        &::before {
+            @include media-breakpoint-up(lg) {
+                min-width: 50px;
+            }
+
+            font-family: $font-family-base;
+            color: $brand-secondary;
+            content: 'Menu';
+            display: inline-block;
+            padding-right: 6px;
+            font-weight: bold;
+            // Stop judder when text changes.
+            min-width: 45px;
+        }
+    }
+
+    &__menu-icon,
+    &__menu-icon::after,
+    &__menu-icon::before {
+        height: $bar-height;
+        transition: transform 300ms cubic-bezier(.23, 1, .32, 1);
+    }
+
+    &__menu-icon {
+        position: relative;
+        background: $brand-secondary-text;
+        width: $bar-width;
+
+        &::before,
+        &::after {
+            background: $brand-secondary-text;
+            content: '';
+            position: absolute;
+            left: 0;
+            width: 100%;
+        }
+
+        &::before {
+            transform: translateY(-$bar-spacing);
+        }
+
+        &::after {
+            transform: translateY($bar-spacing);
+        }
     }
 }

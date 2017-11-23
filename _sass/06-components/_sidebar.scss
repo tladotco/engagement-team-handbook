@@ -3,29 +3,59 @@
 
 .sidebar {
     @include media-breakpoint-up(md) {
+        position: relative;
         width: 100%;
         height: 100%;
         text-align: right;
+        padding: 3rem;
 
-        .navigation {
+        .navigation,
+        .footer {
             display: block;
         }
     }
 
+    position: fixed;
     top: 0;
     left: 0;
-    bottom: 0;
+    right: 0;
+    height: 70px;
+    padding: .5rem;
     background-color: $brand-secondary;
     color: $brand-secondary-text;
-    padding: 3rem;
     overflow: hidden;
+    transition: height ease-in-out .25s;
+
+    .navigation,
+    .footer {
+        display: hidden;
+    }
 
     &--active {
-        position: fixed;
-        width: 100%;
+        height: 100vh;
 
-        .navigation {
+        .navigation,
+        .footer {
             display: block;
+        }
+
+        .header__menu-icon {
+            background-color: transparent;
+
+            &::before,
+            &::after {
+                width: $bar-width;
+            }
+
+            &::after {
+                top: 0;
+                transform: rotate(45deg);
+            }
+
+            &::before {
+                bottom: 0;
+                transform: rotate(-45deg);
+            }
         }
     }
 }
