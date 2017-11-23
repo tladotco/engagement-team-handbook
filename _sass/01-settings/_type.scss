@@ -23,7 +23,7 @@ $line-height: 2.5;
 // 4. Below set the filename, weight and style of the variant you need to support.
 // 5. Gulp & SASS does the rest of the magic!
 
-$body-custom-font-variants: ( ('regular', normal, normal), ('italic', normal, italic), ('bold', bold, normal)) !default;
+$body-custom-font-variants: ( ('regular', normal, normal), ('bold', bold, normal)) !default;
 $heading-custom-font-variants: ( ('regular', normal, normal), ('bold', bolder, normal)) !default;
 
 $link-color: $brand-primary;
