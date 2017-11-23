@@ -13,4 +13,8 @@ Next up, you've seen the view, you get the free beer on Fridays, and your relaxi
 
 ## Hit the Ground Running
 
-Ready to smash some code? Nice enthusiasm! Just before you roll your sleeves up, let's take a breath an get on board with process. You can start with looking at how we do source control, ready for you to clone your first project.
+Ready to smash some code? Nice enthusiasm! Just before you roll your sleeves up, let's take a breath an get on board with process. You can start with looking at how we do [source control](/docs/source-control), ready for you to clone your first project, and continue to work through that section.
+
+## Back to your Roots
+
+This guide lists our formal process. If you feel that we aren't being consistent somewhere or you don't agree with this guide - create a new pull request and submit it for discussion with the team. This guide isn't the right or wrong way to do stuff, it's *how we agree to do things as a team*.
