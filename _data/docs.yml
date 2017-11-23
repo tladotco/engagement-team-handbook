@@ -10,6 +10,8 @@
   - jira
   - documentation
   - code-reviews
+  - logging
+  - incidents
 - title: Best Practices
   docs:
   - general-best-practices
