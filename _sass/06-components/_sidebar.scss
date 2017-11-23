@@ -19,7 +19,7 @@
     top: 0;
     left: 0;
     right: 0;
-    height: 70px;
+    height: 75px;
     padding: .5rem;
     background-color: $brand-secondary;
     color: $brand-secondary-text;
@@ -29,6 +29,7 @@
     .navigation,
     .footer {
         display: hidden;
+        position: relative;
     }
 
     &--active {
@@ -37,6 +38,12 @@
         .navigation,
         .footer {
             display: block;
+            overflow-y: auto;
+            width: 100%;
+        }
+
+        .footer {
+            position: absolute;
         }
 
         .header__menu-icon {
