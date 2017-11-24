@@ -13,7 +13,7 @@ Next up, you've seen the view, you get the free beer on Fridays, and your relaxi
 
 ## Hit the Ground Running
 
-Ready to smash some code? Nice enthusiasm! Just before you roll your sleeves up, let's take a breath an get on board with process. You can start with looking at how we do [source control]({{ site.baseurl }}/docs/source-control), ready for you to clone your first project, and continue to work through that section.
+Ready to smash some code? Nice enthusiasm! Just before you roll your sleeves up, let's take a breath and get on board with process. You can start with looking at how we do [source control]({{ site.baseurl }}/docs/source-control), ready for you to clone your first project, and continue to work through that section.
 
 ## Back to your Roots
 
