@@ -1,5 +1,5 @@
 {
-    "name": "",
+    "name": "The Lead Agency Engagement Team Handbook",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",
@@ -12,7 +12,9 @@
             "type": "image/png"
         }
     ],
-    "theme_color": "#ffffff",
-    "background_color": "#ffffff",
-    "display": "standalone"
+    "short_name": "TLA Engagement Team Handbook",
+    "start_url": "/engagement-team-handbook/",
+    "display": "standalone",
+    "background_color": "#1F1F1F",
+    "theme_color": "#EE1C3A"
 }

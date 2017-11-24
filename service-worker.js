@@ -2,7 +2,10 @@
     var filesToCache = [
         '.',
         '/engagement-team-handbook/',
+        '/engagement-team-handbook/manifest.json' ,
         '/engagement-team-handbook/css/master.css',
+        '/engagement-team-handbook/js/main.js',
+        '/engagement-team-handbook/service-worker.js',
         '/engagement-team-handbook/image/logo-mob.png',
         '/engagement-team-handbook/image/logo-white.png',
         '/engagement-team-handbook/image/tla-gitflow.svg',
@@ -13,19 +16,19 @@
         '/engagement-team-handbook/_fonts/BrandonGrotesque/regular.ttf',
         '/engagement-team-handbook/_fonts/BrandonGrotesque/regular.woff',
         '/engagement-team-handbook/_fonts/BrandonGrotesque/regular.woff2',
-        '/engagement-team-handbook/docs/what-we-do',
-        '/engagement-team-handbook/docs/team-aims',
-        '/engagement-team-handbook/docs/useful-links',
-        '/engagement-team-handbook/docs/source-control',
-        '/engagement-team-handbook/docs/jira',
-        '/engagement-team-handbook/docs/documentation',
-        '/engagement-team-handbook/docs/code-reviews',
-        '/engagement-team-handbook/docs/logging',
-        '/engagement-team-handbook/docs/incidents',
-        '/engagement-team-handbook/docs/general-best-practices',
-        '/engagement-team-handbook/docs/front-end-best-practices',
-        '/engagement-team-handbook/docs/back-end-best-practices',
-        '/engagement-team-handbook/docs/greenfield-project-checklist'
+        '/engagement-team-handbook/docs/what-we-do/',
+        '/engagement-team-handbook/docs/team-aims/',
+        '/engagement-team-handbook/docs/useful-links/',
+        '/engagement-team-handbook/docs/source-control/',
+        '/engagement-team-handbook/docs/jira/',
+        '/engagement-team-handbook/docs/documentation/',
+        '/engagement-team-handbook/docs/code-reviews/',
+        '/engagement-team-handbook/docs/logging/',
+        '/engagement-team-handbook/docs/incidents/',
+        '/engagement-team-handbook/docs/general-best-practices/',
+        '/engagement-team-handbook/docs/front-end-best-practices/',
+        '/engagement-team-handbook/docs/back-end-best-practices/',
+        '/engagement-team-handbook/docs/greenfield-project-checklist/'
     ];
 
     var staticCacheName = 'engagement-handbook-v1';
@@ -40,14 +43,12 @@
     });
 
     self.addEventListener('fetch', function (event) {
-        if (event.request.method === 'GET') {
             event.respondWith(
                 caches.match(event.request)
-                    .then(function (response) {
+                .then(function (response) {
                         return response || fetchAndCache(event.request);
                     })
             );
-        }
     });
 
     self.addEventListener('activate', function (event) {
