@@ -1,4 +1,5 @@
 baseurl: /engagement-team-handbook
+highlighter: rogue
 sass:
   style: compressed
 

@@ -18,7 +18,7 @@ We can split our work out into three parts; sites, ads & chatbots.
 
 ### Sites
 
-We several main sites, and a lot of smaller partner projects we do for clients. Like business older than 15 years, we do have legacy, we aim to have all sites on Umbraco and there are active projects planned into to progress this.
+We maintain several main sites, and a lot of smaller partner projects we do for clients. Like any business older than 15 years, we do have legacy, we aim to have all sites on Umbraco, there are active projects planned into to progress this.
 
 - [Instant Compare](https://www.instantcompare.co.uk/) [Home] : Umbraco 7.7+
 - [Car Keys](https://carkeys.co.uk) [Automotive]: Umbraco 7.7+
@@ -27,7 +27,7 @@ We several main sites, and a lot of smaller partner projects we do for clients. 
 
 ### Ads
 
-We have built our own ad delivery network that allows us to partner up with clients and deliver more traffic to our main sites. The work we have done around this is entirely aimed at performance. We are scrape pages where ads are placed, calculate what products are being written about and precisely deliver a related ad. We use Microservices & CosmosDB to us to cache pages, and then deliver ads in under 100ms.
+We have built our own ad delivery network which allows us to partner up with clients and deliver more traffic to our main sites. The work we have done around this is entirely aimed at performance. We scrape pages where ads are placed, calculate what products are being written about and precisely deliver a related ad. We use Microservices & CosmosDB for us to cache pages, and then deliver quick, snap!
 
 ### Chat Bots
 
