@@ -1,11 +1,14 @@
-﻿<aside class="sidebar" >
+﻿<aside class="sidebar">
     <header class="header">
-        <picture class="header__image">
-            <source width="60" srcset="{{ site.baseurl}}/image/logo-mob.png" media="(max-width: 768px)"></source>
-            <img  width="300" height="133" alt="TLA Logo" src="{{ site.baseurl}}/image/logo-white.png" />
-        </picture>
+        <a href="{{ site.baseurl }}/">
+            <picture class="header__image">
+                <source width="60" srcset="{{ site.baseurl }}/image/logo-mob.png" media="(max-width: 768px)"></source>
+                <img width="300" height="133" alt="TLA Logo" src="{{ site.baseurl}}/image/logo-white.png" />
+            </picture>
+        </a>
         <h1 class="header__title">Engagement Team</h1>
-        <a class="header__toggle-icon" data-toggle="header" onclick="document.querySelector('.sidebar').classList.toggle('sidebar--active');" role="button">
+        <a class="header__toggle-icon" data-toggle="header" onclick="document.querySelector('.sidebar').classList.toggle('sidebar--active');"
+            role="button">
             <span class="sr-only">Toggle Main Menu</span>
             <i class="header__menu-icon"></i>
         </a>
