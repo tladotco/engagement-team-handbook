@@ -43,6 +43,7 @@ See [source control]({{ site.baseurl}}/docs/source-control) for details on branc
     - QA (optional)
     - Staging
     - Live
+- Set up build & release notifications
 - Environment transforms added to release steps
 - Slot swaps ensures old slot is stopped
 
@@ -55,6 +56,7 @@ See [source control]({{ site.baseurl}}/docs/source-control) for details on branc
 -  Add Application insights (see DevOps for creating insights account)
 -  Added logging middleware
 -  Added [documentation]({{ site.baseurl}}/docs/documentation) template (README to root)
+-  If this is a new product, set up a public Slack channel, i.e `website-carkeys` and invite anyone working with this product
 
 ## Dev Ops
 

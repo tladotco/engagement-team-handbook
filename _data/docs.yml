@@ -12,6 +12,7 @@
   - code-reviews
   - logging
   - incidents
+  - notifications
 - title: Best Practices
   docs:
   - general-best-practices

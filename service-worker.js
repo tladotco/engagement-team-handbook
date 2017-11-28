@@ -30,7 +30,8 @@
         '/engagement-team-handbook/docs/general-best-practices/',
         '/engagement-team-handbook/docs/front-end-best-practices/',
         '/engagement-team-handbook/docs/back-end-best-practices/',
-        '/engagement-team-handbook/docs/greenfield-project-checklist/'
+        '/engagement-team-handbook/docs/greenfield-project-checklist/',
+        '/engagement-team-handbook/docs/notifications/'
     ];
 
     var staticCacheName = 'engagement-handbook-v1.1';
