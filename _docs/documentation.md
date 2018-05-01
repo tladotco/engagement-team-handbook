@@ -23,7 +23,7 @@ This is a great [tool](https://marketplace.visualstudio.com/items?itemName=MadsK
 # Support
  
 - Support requests are dealt with via [Jira](http://jira.theautonetwork.net/projects/[YOUR_PROJECT_NAME])
-- For help you can contact the team working with this application on the [#YOUR_CHANNEL](https://theleadagency.slack.com/messages/[YOUR_CHANNEL_ID]/) channel.
+- For help you can contact the team working with this application on the relevant Product channel within Microsoft Teams.
 - Logs can be found [Location of logs]
 - Telemetry for this application is managed via [Application Insights](https://portal.azure.com/#resource/subscriptions/78e49f08-9bdc-4b66-b2f0-8df340ef310d/resourceGroups/TLA-RG-PROD-NE-001/providers/microsoft.insights/components/carkeys/overview).
  
