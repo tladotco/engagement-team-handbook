@@ -8,13 +8,13 @@ No one likes incidents, but the key thing is the *keep calm*. Follow these gener
 
 ## P1
 
-2. Create a ticket, and an incident channel in Slack, invite all relevant parties (stakeholder, product owner, senior devs)
-3. Send someone to notify stakeholder (just in case they aren't on Slack)
+2. Create a JIRA ticket, notify the relevant Teams Product channel (stakeholder, product owner, senior devs)
+3. Notify key stakeholders (just in case they aren't on Teams)
 4. Begin formal debugging of issues
     - Check infrastructure (Azure, new relic); things like SQL, Web Apps 
     - Check application insights
     - Check logs
-5. Log investigations and discoveries via Slack/Ticket
+5. Log investigations and discoveries via Teams/Ticket
 
 ## P2
 

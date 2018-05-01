@@ -34,11 +34,11 @@ See [source control]({{ site.baseurl}}/docs/source-control) for details on branc
         - Run tests
     - Develop Branch Build CI
         - Smoke Tests (ping URLs for success etc)
-        - Publish artefact for dev
+        - Publish artifact for dev
     - Master/Release Branch CI Build
         - Extensive testing (Load testing, UI testing)
         - Optionally version with [SemVar](https://semver.org/) and tag Git Branch
-- Create release definition through TFS
+- Create release definition through VSTS
     - Dev
     - QA (optional)
     - Staging

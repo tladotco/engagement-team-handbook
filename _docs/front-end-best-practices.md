@@ -5,7 +5,7 @@ title: Front End
 
 - Always use the correct semantics, always use HTML5
     - Remember your form attributes
-    - There is a _lot_ of elements to use - [cheetsheet](https://www.wpkube.com/wp-content/uploads/2017/09/html-chatsheet.pdf).
+    - There is a _lot_ of elements to use - [cheatsheet](https://www.wpkube.com/wp-content/uploads/2017/09/html-chatsheet.pdf).
 - Avoid using `H1` elements more than once on a page
 - Avoid viewport specific markup
 
