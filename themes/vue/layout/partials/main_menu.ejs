@@ -4,6 +4,9 @@
   </form>
 </li>
 <li>
+  <a href="<%- url_for("/about/index.html") %>" class="nav-link team<%- page.path.match(/best-practices\.html/) ? ' current' : '' %>">About</a>
+</li>
+<li>
   <a href="<%- url_for("/process/index.html") %>" class="nav-link<%- page.path.match(/process\.html/)  ? ' current' : '' %>">Process</a>
 </li>
 <li>
