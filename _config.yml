@@ -3,12 +3,12 @@
 ## Source: https://github.com/tommy351/hexo/
 
 # Site
-title: Vue.js
-subtitle:
-description: "The Progressive JavaScript Framework"
-author: Evan You
-email:
-language:
+title: Development Team Handbook
+subtitle: The Lead Agency
+description: "A handbook for defining the processes, best practices and culture of The Lead Agency Development squads."
+author: The Lead Agency
+email: development@theleadagency.com
+language: EN_GB
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
@@ -103,15 +103,6 @@ offline:
   stripPrefix: public
   verbose: true
   runtimeCaching:
-    # Ad Sources - should be networkFirst
-    - urlPattern: /*
-      handler: networkFirst
-      options:
-        origin: sendgrid.sp1.convertro.com
-    - urlPattern: /*
-      handler: networkFirst
-      options:
-        origin: ad.doubleclick.net
     # CDNs - should be cacheFirst, since they should be used specific versions so should not change
     - urlPattern: /*
       handler: cacheFirst
