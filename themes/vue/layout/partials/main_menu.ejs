@@ -3,6 +3,9 @@
     <input type="text" id="search-query-<%- context %>" class="search-query st-default-search-input">
   </form>
 </li>
+<li>
+  <a href="<%- url_for("/process/index.html") %>" class="nav-link<%- page.path.match(/team\.html/)  ? ' current' : '' %>">Process</a>
+</li>
 <%- partial('partials/learn_dropdown') %>
 <%- partial('partials/ecosystem_dropdown') %>
 <li>
