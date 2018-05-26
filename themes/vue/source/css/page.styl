@@ -130,7 +130,7 @@
       code
         background-color: #efefef
   p
-    &.tip, &.success
+    &.tip, &.success, &.todo
       padding: 12px 24px 12px 30px
       margin: 2em 0
       border-left-width: 4px
@@ -152,6 +152,11 @@
         font-weight: bold
         font-family: $logo-font
         font-size: 14px
+      &:after
+        position absolute
+        font-size: 70%
+        top: 0
+        right: 5px
       code
         background-color: #efefef
       em
@@ -162,11 +167,22 @@
         content: "!"
         background-color: $red
     &.success
-      border-left-color: $brand
+      border-left-color: $success
       &:before
         content: "\f00c"
-        font-family: FontAwesome
-        background-color: $brand
+        font-family: 'Font Awesome 5 Free'
+        background-color: $success
+    &.todo
+      border-left-color: $warning
+      padding-top: 5px
+      &:before
+        content: "\f058"
+        font-family: 'Font Awesome 5 Free'
+        background-color: $warning
+      &:after
+        content: 'TODO'
+        color: $warning
+
 
 .guide-links
   margin-top: 2em
