@@ -4,10 +4,8 @@
   </form>
 </li>
 <li>
-  <a href="<%- url_for("/process/index.html") %>" class="nav-link<%- page.path.match(/team\.html/)  ? ' current' : '' %>">Process</a>
+  <a href="<%- url_for("/process/index.html") %>" class="nav-link<%- page.path.match(/process\.html/)  ? ' current' : '' %>">Process</a>
 </li>
-<%- partial('partials/learn_dropdown') %>
-<%- partial('partials/ecosystem_dropdown') %>
 <li>
-  <a href="<%- url_for("/v2/guide/team.html") %>" class="nav-link team<%- page.path.match(/team\.html/) ? ' current' : '' %>">Team</a>
+  <a href="<%- url_for("/best-practices/index.html") %>" class="nav-link team<%- page.path.match(/best-practices\.html/) ? ' current' : '' %>">Best Practices</a>
 </li>

@@ -5,16 +5,6 @@
     </ul>
     <div class="list">
       <% if (type !== 'search') { %>
-        <h2>
-          <% titles = {
-            api: 'API',
-            examples: 'Examples',
-            guide: 'Guide',
-            cookbook: 'Cookbook<sup class="beta">beta</sup>',
-            'style-guide': 'Style Guide<sup class="beta">beta</sup>'
-          } %>
-          <%- titles[type] %>
-        </h2>
         <%- partial('partials/toc', { type: type }) %>
       <% } %>
     </div>

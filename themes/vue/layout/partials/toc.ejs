@@ -1,33 +1,35 @@
 <ul class="menu-root">
-  <% ['api', 'style-guide'].indexOf(type) === -1 && site.pages.find({type: type}).sort('order').each(function (p) { %>
+  <% site.pages.find({type: type}).sort('order').each(function (p) { %>
     <% var fileName = p.path.replace(/^.+?\/([\w-]+)\.html/, '$1') %>
-    <% if (type === 'guide') { %>
-      <% if (fileName === 'installation') { %>
-        <li><h3>Essentials</h3></li>
+    <% if (type === 'process') { %>
+      <% if (fileName === 'index') { %>
+        <li><h3>General</h3></li>
       <% } %>
-      <% if (fileName === 'components-registration') { %>
-        <li><h3>Components In-Depth</h3></li>
+      <% if (fileName === 'requirements') { %>
+        <li><h3>Planning</h3></li>
       <% } %>
-      <% if (fileName === 'transitions') { %>
-        <li><h3>Transitions & Animation</h3></li>
+      <% if (fileName === 'source-control') { %>
+        <li><h3>Implementation</h3></li>
       <% } %>
-      <% if (fileName === 'mixins') { %>
-        <li><h3>Reusability & Composition</h3></li>
+      <% if (fileName === 'code-reviews') { %>
+        <li><h3>QA & Documentation</h3></li>
       <% } %>
-      <% if (fileName === 'deployment') { %>
-        <li><h3>Tooling</h3></li>
+      <% if (fileName === 'builds') { %>
+        <li><h3>Deployment</h3></li>
       <% } %>
-      <% if (fileName === 'routing') { %>
-        <li><h3>Scaling Up</h3></li>
+      <% if (fileName === 'incidents') { %>
+        <li><h3>Maintenance & Support</h3></li>
       <% } %>
-      <% if (fileName === 'reactivity') { %>
-        <li><h3>Internals</h3></li>
+    <% } %>
+    <% if (type === 'best-practices') { %>
+      <% if (fileName === 'c-sharp') { %>
+        <li><h3>Server Side</h3></li>
       <% } %>
-      <% if (fileName === 'migration') { %>
-        <li><h3>Migrating</h3></li>
+      <% if (fileName === 'html') { %>
+        <li><h3>Front End</h3></li>
       <% } %>
-      <% if (fileName === 'comparison') { %>
-        <li><h3>Meta</h3></li>
+      <% if (fileName === 'infrastructure') { %>
+        <li><h3>Devops</h3></li>
       <% } %>
     <% } %>
     <li>
