@@ -1,15 +1,39 @@
 ---
-title: Support Queue
+title: Workflow
 type: process
 order: 2
 ---
 
+## Jira
+
+This will be a short run through of the Jira process we adopt. The Wiki contains more extensive details on its use, experience will also help with this.
+
+- All work, however small, is managed via Jira.
+- Log all time against tickets - logging time ensures we are putting the effort into the right place
+- Keep your ticket status up to date
+- It's good etiquette to leave tickets unassigned, and trust it will be picked up by the appropriate person
+
+### Doing Work
+
+1. Start ticket and assign to self (in progress)
+2. Ensure you're clear on requirements before starting
+3. When [done](/process/definition-of-done.html), place into review, add a link to the PR to be reviewed
+4. Before starting your next piece;
+    -   Are there any other tickets in review that you can review?
+    -   Are there any tickets waiting to be released?
+
+### Reviewing Work
+
+1. Set your name in the reviewer field - this stops anyone reviewing work at the same time as you
+2. Perform review, see [Code Reviews](/process/code-reviews.html) for more info.
+3. Happy, transition to the next step as is appropriate for the work
+3. Not happy? Fail the review, list reasons for failure in ticket comments
+ 
+## Support Queues
+
 There are three support queues at TLA which handle work items in different ways. You will be assigned a queue to work on during planning sessions at the beginning of a sprint. Here we will cover your role within each queue and what the expectations are.
 
-## Support
-
-The role consists of (by order of precedence):
-
+### Support
 1. Dealing with [Incidents](/process/incidents.html)
 2. [Triaging](/process/triage.html) Tickets
 3. Supporting BAU
@@ -23,9 +47,7 @@ This is an excellent role for getting to know various aspects of the business, b
 
 When the support queue is quiet it's a great time to help the BAU team with code reviews or any work they're struggling to get done. It's also an opportunity to fix them issues that might be niggling you, or to brush up on some learning.
 
-## BAU
-
-The BAU squad deals with the small time tasks and jobs and general system maintenance. The role:
+### BAU
 
 - Supports the business in a general capacity
 - Will be expected to deliver work to deadlines, with an understanding that these may slip
@@ -35,9 +57,7 @@ The BAU team works off a BAU Kanban board, in a top to bottom capacity. That is,
 BAU is expected to help support with reviews and in exceptional circumstances will be required to drop work and help with any major incidents whenever support becomes inundated,
 
 
-## Project
-
-This role:
+### Project
 
 - Delivers features and large pieces of work
 - Is solely dedicated to delivering that system or feature
