@@ -24,7 +24,7 @@
   <% } else { %>
     <%- page.content %>
   <% } %>
-  <% if (page.type === 'guide') { %>
+  <% if (page.type === 'process') { %>
     <div class="guide-links">
       <% const lastPage = site.pages.find({ type: page.type, order: { $lt: page.order }}).sort({ order: -1 }).first(); %>
       <% if (lastPage) { %>
