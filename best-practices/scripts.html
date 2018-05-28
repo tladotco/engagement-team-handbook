@@ -1,0 +1,224 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Scripts - TLA Dev Handbook</title>
+    <meta name="description" content="A handbook for defining the processes, best practices and culture of The Lead Agency Development squads.">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Scripts - TLA Dev Handbook">
+    <meta property="og:description" content="A handbook for defining the processes, best practices and culture of The Lead Agency Development squads.">
+    <meta property="og:image" content="https://https://theleadagency.github.io/engagement-team-handbook/images/logo.png") ">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/engagement-team-handbook/images/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/engagement-team-handbook/images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/engagement-team-handbook/images/icons/favicon-16x16.png">
+    <link rel="manifest" href="/engagement-team-handbook/site.webmanifest">
+    <link rel="mask-icon" href="/engagement-team-handbook/images/icon/safari-pinned-tab.svg" color="#ee1c3a">
+    <meta name="apple-mobile-web-app-title" content="TLA Dev Handbook">
+    <meta name="application-name" content="TLA Dev Handbook">
+    <meta name="msapplication-TileColor" content="#ee1c3a">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- main page styles -->
+    <link rel="stylesheet" href="/engagement-team-handbook/css/page.css">
+
+    <!-- this needs to be loaded before guide's inline scripts -->
+    <script>window.PAGE_TYPE = "best-practices"</script>
+
+  </head>
+  <body class="docs">
+    <div id="mobile-bar" >
+      <a class="menu-button"></a>
+      <a class="logo" href="/engagement-team-handbook/"></a>
+    </div>
+    <div id="header">
+  <a id="logo" href="/engagement-team-handbook/">
+    <img src="/engagement-team-handbook/images/logo.png">
+    <span>TLA Dev Handbook</span>
+  </a>
+  <ul id="nav">
+    <li>
+  <a href="/engagement-team-handbook/about/index.html" class="nav-link">About</a>
+</li>
+<li>
+  <a href="/engagement-team-handbook/process/index.html" class="nav-link">Process</a>
+</li>
+<li>
+  <a href="/engagement-team-handbook/best-practices/index.html" class="nav-link">Best Practices</a>
+</li>
+  </ul>
+</div>
+
+    
+      <div id="main" class="fix-sidebar">
+        
+          
+  <div class="sidebar">
+  <div class="sidebar-inner">
+    <ul class="main-menu">
+      <li>
+  <a href="/engagement-team-handbook/about/index.html" class="nav-link">About</a>
+</li>
+<li>
+  <a href="/engagement-team-handbook/process/index.html" class="nav-link">Process</a>
+</li>
+<li>
+  <a href="/engagement-team-handbook/best-practices/index.html" class="nav-link">Best Practices</a>
+</li>
+    </ul>
+    <div class="list">
+      
+        <ul class="menu-root">
+  
+    
+    
+    
+      
+      
+      
+    
+    <li>
+      <a href="/engagement-team-handbook/best-practices/index.html" class="sidebar-link">Introduction</a>
+    </li>
+  
+    
+    
+    
+      
+        <li><h3>Server Side</h3></li>
+      
+      
+      
+    
+    <li>
+      <a href="/engagement-team-handbook/best-practices/c-sharp.html" class="sidebar-link">C#</a>
+    </li>
+  
+    
+    
+    
+      
+      
+      
+    
+    <li>
+      <a href="/engagement-team-handbook/best-practices/umbraco.html" class="sidebar-link">Umbraco</a>
+    </li>
+  
+    
+    
+    
+      
+      
+        <li><h3>Front End</h3></li>
+      
+      
+    
+    <li>
+      <a href="/engagement-team-handbook/best-practices/html.html" class="sidebar-link">Markup</a>
+    </li>
+  
+    
+    
+    
+      
+      
+      
+    
+    <li>
+      <a href="/engagement-team-handbook/best-practices/scripts.html" class="sidebar-link current">Scripts</a>
+    </li>
+  
+    
+    
+    
+      
+      
+      
+    
+    <li>
+      <a href="/engagement-team-handbook/best-practices/styles.html" class="sidebar-link">Styles</a>
+    </li>
+  
+    
+    
+    
+      
+      
+      
+    
+    <li>
+      <a href="/engagement-team-handbook/best-practices/builds.html" class="sidebar-link">Builds</a>
+    </li>
+  
+    
+    
+    
+      
+      
+      
+        <li><h3>Devops</h3></li>
+      
+    
+    <li>
+      <a href="/engagement-team-handbook/best-practices/infrastructure.html" class="sidebar-link">Infrastructure</a>
+    </li>
+  
+</ul>
+
+      
+    </div>
+  </div>
+</div>
+
+<div class="content best-practices with-sidebar ">
+  
+    
+  
+  
+    <h1>Scripts</h1>
+  
+    <ul>
+<li>Always use <a href="https://github.com/lukehoban/es6features" target="_blank" rel="noopener">ES6 syntax</a> (or latest) JavaScript and run through Babel</li>
+<li>Don’t pollute global namespaces<ul>
+<li>know your <a href="https://github.com/getify/You-Dont-Know-JS/tree/master/scope%20%26%20closures" target="_blank" rel="noopener">scope</a></li>
+<li>see <a href="https://addyosmani.com/resources/essentialjsdesignpatterns/book/#modulepatternjavascript" target="_blank" rel="noopener">module pattern</a></li>
+</ul>
+</li>
+<li>Follow best practices of the framework you are using</li>
+<li>Debounce your scroll and resize events</li>
+<li>Try to load scripts via <code>async</code> (preferably) or <code>defer</code> attributes</li>
+</ul>
+<h2 id="Typescript"><a href="#Typescript" class="headerlink" title="Typescript"></a>Typescript</h2><p class="todo">Some stuff about TS here.</p>
+
+<h2 id="Frameworks"><a href="#Frameworks" class="headerlink" title="Frameworks"></a>Frameworks</h2><h3 id="Vue-js"><a href="#Vue-js" class="headerlink" title="Vue.js"></a>Vue.js</h3><p>Vue should be adopted where possible, is planned to replace any JS still using jQuery. Components should be kept as lightweight as possible, heavy work should be moved to services injected in.</p>
+<p>For full best practices, you can follow the <a href="https://vuejs.org/v2/style-guide/" target="_blank" rel="noopener">Vue.js style Guide</a>.</p>
+<h3 id="jQuery"><a href="#jQuery" class="headerlink" title="jQuery"></a>jQuery</h3><p class="tip">Going forwards, this should no longer be used.</p>
+
+<p>Prepend jQuery specific objects with a <code>$</code> to identify it as such.</p>
+
+  
+  <div class="footer">
+    Caught a mistake or want to contribute to the documentation?
+    <a rel="noopener" href="https://github.com/theleadagency/engagement-team-handbook/blob/master/src/best-practices/scripts.md" target="_blank">
+      Edit this page on GitHub!
+    </a>
+  </div>
+</div>
+
+        
+      </div>
+      <script src="/engagement-team-handbook/js/smooth-scroll.min.js"></script>
+    
+
+    <!-- main custom script for sidebars, version selects etc. -->
+    <script src="/engagement-team-handbook/js/css.escape.js"></script>
+    <script src="/engagement-team-handbook/js/common.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/regular.css" integrity="sha384-EWu6DiBz01XlR6XGsVuabDMbDN6RT8cwNoY+3tIH+6pUCfaNldJYJQfQlbEIWLyA" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/fontawesome.css" integrity="sha384-GVa9GOgVQgOk+TNYXu7S/InPTfSDTtBalSgkgqQ7sCik56N9ztlkoTr2f/T44oKV" crossorigin="anonymous">
+  </body>
+</html>

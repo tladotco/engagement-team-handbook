@@ -1,0 +1,246 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Markup - TLA Dev Handbook</title>
+    <meta name="description" content="A handbook for defining the processes, best practices and culture of The Lead Agency Development squads.">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Markup - TLA Dev Handbook">
+    <meta property="og:description" content="A handbook for defining the processes, best practices and culture of The Lead Agency Development squads.">
+    <meta property="og:image" content="https://https://theleadagency.github.io/engagement-team-handbook/images/logo.png") ">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/engagement-team-handbook/images/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/engagement-team-handbook/images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/engagement-team-handbook/images/icons/favicon-16x16.png">
+    <link rel="manifest" href="/engagement-team-handbook/site.webmanifest">
+    <link rel="mask-icon" href="/engagement-team-handbook/images/icon/safari-pinned-tab.svg" color="#ee1c3a">
+    <meta name="apple-mobile-web-app-title" content="TLA Dev Handbook">
+    <meta name="application-name" content="TLA Dev Handbook">
+    <meta name="msapplication-TileColor" content="#ee1c3a">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- main page styles -->
+    <link rel="stylesheet" href="/engagement-team-handbook/css/page.css">
+
+    <!-- this needs to be loaded before guide's inline scripts -->
+    <script>window.PAGE_TYPE = "best-practices"</script>
+
+  </head>
+  <body class="docs">
+    <div id="mobile-bar" >
+      <a class="menu-button"></a>
+      <a class="logo" href="/engagement-team-handbook/"></a>
+    </div>
+    <div id="header">
+  <a id="logo" href="/engagement-team-handbook/">
+    <img src="/engagement-team-handbook/images/logo.png">
+    <span>TLA Dev Handbook</span>
+  </a>
+  <ul id="nav">
+    <li>
+  <a href="/engagement-team-handbook/about/index.html" class="nav-link">About</a>
+</li>
+<li>
+  <a href="/engagement-team-handbook/process/index.html" class="nav-link">Process</a>
+</li>
+<li>
+  <a href="/engagement-team-handbook/best-practices/index.html" class="nav-link">Best Practices</a>
+</li>
+  </ul>
+</div>
+
+    
+      <div id="main" class="fix-sidebar">
+        
+          
+  <div class="sidebar">
+  <div class="sidebar-inner">
+    <ul class="main-menu">
+      <li>
+  <a href="/engagement-team-handbook/about/index.html" class="nav-link">About</a>
+</li>
+<li>
+  <a href="/engagement-team-handbook/process/index.html" class="nav-link">Process</a>
+</li>
+<li>
+  <a href="/engagement-team-handbook/best-practices/index.html" class="nav-link">Best Practices</a>
+</li>
+    </ul>
+    <div class="list">
+      
+        <ul class="menu-root">
+  
+    
+    
+    
+      
+      
+      
+    
+    <li>
+      <a href="/engagement-team-handbook/best-practices/index.html" class="sidebar-link">Introduction</a>
+    </li>
+  
+    
+    
+    
+      
+        <li><h3>Server Side</h3></li>
+      
+      
+      
+    
+    <li>
+      <a href="/engagement-team-handbook/best-practices/c-sharp.html" class="sidebar-link">C#</a>
+    </li>
+  
+    
+    
+    
+      
+      
+      
+    
+    <li>
+      <a href="/engagement-team-handbook/best-practices/umbraco.html" class="sidebar-link">Umbraco</a>
+    </li>
+  
+    
+    
+    
+      
+      
+        <li><h3>Front End</h3></li>
+      
+      
+    
+    <li>
+      <a href="/engagement-team-handbook/best-practices/html.html" class="sidebar-link current">Markup</a>
+    </li>
+  
+    
+    
+    
+      
+      
+      
+    
+    <li>
+      <a href="/engagement-team-handbook/best-practices/scripts.html" class="sidebar-link">Scripts</a>
+    </li>
+  
+    
+    
+    
+      
+      
+      
+    
+    <li>
+      <a href="/engagement-team-handbook/best-practices/styles.html" class="sidebar-link">Styles</a>
+    </li>
+  
+    
+    
+    
+      
+      
+      
+    
+    <li>
+      <a href="/engagement-team-handbook/best-practices/builds.html" class="sidebar-link">Builds</a>
+    </li>
+  
+    
+    
+    
+      
+      
+      
+        <li><h3>Devops</h3></li>
+      
+    
+    <li>
+      <a href="/engagement-team-handbook/best-practices/infrastructure.html" class="sidebar-link">Infrastructure</a>
+    </li>
+  
+</ul>
+
+      
+    </div>
+  </div>
+</div>
+
+<div class="content best-practices with-sidebar ">
+  
+    
+  
+  
+    <h1>Markup</h1>
+  
+    <p>You can capture most of this by frequently running <a href="https://developers.google.com/web/tools/lighthouse/" target="_blank" rel="noopener">lighthouse audits</a> on your webpages.</p>
+<h3 id="Standard-Document-Structure"><a href="#Standard-Document-Structure" class="headerlink" title="Standard Document Structure"></a>Standard Document Structure</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">head</span> <span class="attr">lang</span>=<span class="string">"en-GB"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"utf-8"</span> /&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">meta</span> <span class="attr">content</span>=<span class="string">"IE=edge,chrome=1"</span> <span class="attr">http-equiv</span>=<span class="string">"X-UA-Compatible"</span> /&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"viewport"</span> <span class="attr">content</span>=<span class="string">"width=device-width, initial-scale=1, shrink-to-fit=no"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">href</span>=<span class="string">"boss.css"</span>&gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- Scripts can go in the head if you use the async or defer attributes. --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">script</span> <span class="attr">defer</span> <span class="attr">scr</span>=<span class="string">"my-amazing-script.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">    ...</span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="Semantics"><a href="#Semantics" class="headerlink" title="Semantics"></a>Semantics</h3><p>Always use the correct semantics, always use HTML5. There is a <em>lot</em> of elements to use, checkout this <a href="https://www.wpkube.com/wp-content/uploads/2017/09/html-chatsheet.pdf" target="_blank" rel="noopener">cheatsheet</a>. Some often forgotten ones:</p>
+<ul>
+<li><code>article</code></li>
+<li><code>main</code></li>
+<li><code>aside</code></li>
+</ul>
+<h3 id="Form-Attributes"><a href="#Form-Attributes" class="headerlink" title="Form Attributes"></a>Form Attributes</h3><p>Don’t forget <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form" target="_blank" rel="noopener">form attributes</a> or your <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input" target="_blank" rel="noopener">input attributes</a>. Some forgotton ones:</p>
+<ul>
+<li><code>autocomplete</code></li>
+<li>HTML 5 validation: <code>min</code>, <code>max</code>, <code>required</code></li>
+</ul>
+<h2 id="SEO"><a href="#SEO" class="headerlink" title="SEO"></a>SEO</h2><p>SEO considerations are important when creating any public facing site. </p>
+<ul>
+<li>Avoid using <code>h1</code> elements more than once on a page<ul>
+<li>If you have to have more than one, stress the page title with a <code>strong</code> tag inside your <code>h1</code></li>
+</ul>
+</li>
+<li>Every <code>img</code> must have an <code>[alt]</code> attribute.</li>
+</ul>
+<h3 id="No-Duplicate-Content"><a href="#No-Duplicate-Content" class="headerlink" title="No Duplicate Content"></a>No Duplicate Content</h3><p>Nine times out of ten there is a way to use CSS to make content viewport specific. There is no need to duplicate markup then show and hide things with CSS. Always remember mobile first. Once you get it looking right on mobile, styles can be applied to get the same markup looking right for desktop.</p>
+<h3 id="Meta-Data"><a href="#Meta-Data" class="headerlink" title="Meta Data"></a>Meta Data</h3><p>The page head tag should contain various meta data about the page for crawlers and social media sites. Here is a rough list:</p>
+<ul>
+<li>Title</li>
+<li>Description</li>
+<li>Cannonical URL</li>
+<li><a href="https://developers.facebook.com/docs/sharing/opengraph" target="_blank" rel="noopener">Open Graph</a></li>
+<li><a href="https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started.html" target="_blank" rel="noopener">Twitter Cards</a></li>
+<li><a href="http://schema.org/" target="_blank" rel="noopener">Open Schema</a> (prefer JSON LD format)</li>
+</ul>
+<p>Below is a full example from Car Keys:</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- Standard --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>Mini John Cooper Works Challenge review - Car Keys<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"description"</span> <span class="attr">content</span>=<span class="string">"This is Mini’s most track-focused car and with the brand’s racing heritage, this should be an absolute riot. But how does it perform on the open road?"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">link</span> <span class="attr">href</span>=<span class="string">"https://www.carkeys.co.uk/car-reviews/2018-mini-john-cooper-works-challenge-review"</span> <span class="attr">rel</span>=<span class="string">"canonical"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"robots"</span> <span class="attr">content</span>=<span class="string">"index, follow"</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- Open Graph --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">property</span>=<span class="string">"og:description"</span> <span class="attr">content</span>=<span class="string">"This is Mini’s most track-focused car and with the brand’s racing heritage, this should be an absolute riot. But how does it perform on the open road?"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">property</span>=<span class="string">"og:title"</span> <span class="attr">content</span>=<span class="string">"Mini John Cooper Works Challenge review - Car Keys"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">property</span>=<span class="string">"og:type"</span> <span class="attr">content</span>=<span class="string">"website"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">property</span>=<span class="string">"og:url"</span> <span class="attr">content</span>=<span class="string">"https://www.carkeys.co.uk/car-reviews/2018-mini-john-cooper-works-challenge-review"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">property</span>=<span class="string">"og:image"</span> <span class="attr">content</span>=<span class="string">"https://www.carkeys.co.uk/media/20765/p90222755_highres_mini-john-cooper-wor.jpg?center=0.5708333333333333,0.56944444444444442&amp;amp;mode=crop&amp;amp;width=1200&amp;amp;height=800&amp;amp;rnd=131716500260000000"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">property</span>=<span class="string">"og:determiner"</span> <span class="attr">content</span>=<span class="string">""</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">property</span>=<span class="string">"og:locale"</span> <span class="attr">content</span>=<span class="string">"en_GB"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">property</span>=<span class="string">"og:site_name"</span> <span class="attr">content</span>=<span class="string">"Car Keys"</span> /&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- Twitter --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"twitter:card"</span> <span class="attr">content</span>=<span class="string">"summary"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"twitter:site"</span> <span class="attr">content</span>=<span class="string">@CarKeys_UK</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"twitter:creator"</span> <span class="attr">content</span>=<span class="string">""</span> /&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- Schema --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"application/ld+json"</span>&gt;</span><span class="undefined">&#123;"@context":"http://schema.org","@type":"Review","reviewRating":&#123;"@type":"Rating","bestRating":5.0,"ratingValue":4.0,"worstRating":0.5&#125;,"author":&#123;"@type":"Person","name":"Jack Healy"&#125;,"dateModified":"2018-05-24T15:40:26+00:00","datePublished":"2018-05-24T14:54:32+00:00","headline":"2018 Mini John Cooper Works Challenge review","inLanguage":"en-GB","publisher":&#123;"@type":"Organization","logo":"https://www.carkeys.co.uk/media/19623/cklogo.jpg?mode=max&amp;rnd=131667155520000000","email":"enquiries@carkeys.co.uk","telephone":"08444457863","address":&#123;"@type":"PostalAddress","streetAddress":"CarKeys.co.uk Enquiries, Floor 13, 20 Chapel Street","addressLocality":"Unity Building","addressRegion":"Liverpool","postalCode":"L3 9AG","addressCountry":"GB"&#125;,"name":"Car Keys","url":"https://www.carkeys.co.uk","sameAs":["https://www.facebook.com/CarKeysGB","https://twitter.com/CarKeys_UK","https://instagram.com/carkeys_uk","https://www.youtube.com/user/MotorTorqueUK"]&#125;,"image":&#123;"@type":"ImageObject","url":"https://www.carkeys.co.uk/media/20765/p90222755_highres_mini-john-cooper-wor.jpg?center=0.5708333333333333,0.56944444444444442&amp;mode=crop&amp;width=1200&amp;height=800&amp;rnd=131716500260000000"&#125;,"description":"This is Mini’s most track-focused car yet and with the brand’s racing heritage, this should be an absolute riot. But how does it perform on the open road?"&#125;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="Links"><a href="#Links" class="headerlink" title="Links"></a>Links</h3><p>Use <code>rel=&quot;noopener&quot;</code> on external links.</p>
+<p>Avoid wrapping non-text objects within links. Having just text in a link is semantically correct, and better for SEO.</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- BAD --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"/saucy"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"saucy.jpg"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">h2</span>&gt;</span>This looks amazing<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- GOOD --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">article</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"saucy.jpg"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">h2</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">class</span>=<span class="string">"link"</span> <span class="attr">src</span>=<span class="string">"/saucy"</span>&gt;</span>This looks amazing<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">article</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>To keep the UX feel whilst retaining SEO perfection, you can set a <code>::before</code> or <code>::after</code> pseudo on the link and “overlay” a link touch point with the following CSS:</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.link</span> &#123;</span><br><span class="line">    <span class="attribute">position</span>: absolute;</span><br><span class="line">    <span class="attribute">bottom</span>: <span class="number">0</span>;</span><br><span class="line">    <span class="attribute">left</span>: <span class="number">0</span>;</span><br><span class="line">    <span class="attribute">right</span>: <span class="number">0</span>;</span><br><span class="line">    <span class="attribute">top</span>: <span class="number">0</span>;</span><br><span class="line">    <span class="attribute">z-index</span>: <span class="number">1</span>;</span><br><span class="line">    <span class="attribute">content</span>: <span class="string">''</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="Favicons"><a href="#Favicons" class="headerlink" title="Favicons"></a>Favicons</h3><p> You can generate all favocons and code from <a href="https://realfavicongenerator.net" target="_blank" rel="noopener">here</a>.</p>
+
+  
+  <div class="footer">
+    Caught a mistake or want to contribute to the documentation?
+    <a rel="noopener" href="https://github.com/theleadagency/engagement-team-handbook/blob/master/src/best-practices/html.md" target="_blank">
+      Edit this page on GitHub!
+    </a>
+  </div>
+</div>
+
+        
+      </div>
+      <script src="/engagement-team-handbook/js/smooth-scroll.min.js"></script>
+    
+
+    <!-- main custom script for sidebars, version selects etc. -->
+    <script src="/engagement-team-handbook/js/css.escape.js"></script>
+    <script src="/engagement-team-handbook/js/common.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/regular.css" integrity="sha384-EWu6DiBz01XlR6XGsVuabDMbDN6RT8cwNoY+3tIH+6pUCfaNldJYJQfQlbEIWLyA" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/fontawesome.css" integrity="sha384-GVa9GOgVQgOk+TNYXu7S/InPTfSDTtBalSgkgqQ7sCik56N9ztlkoTr2f/T44oKV" crossorigin="anonymous">
+  </body>
+</html>

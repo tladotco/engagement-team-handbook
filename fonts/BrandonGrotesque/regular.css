@@ -1,0 +1,12 @@
+@font-face {
+    font-family: "Brandon Grotesque Regular";
+    src: url("regular.eot"); /* IE9 */
+    src: url("regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("regular.woff") format("woff"), /* chrome, firefox */
+    url("regular.ttf") format("truetype"), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url("regular.svg#Brandon Grotesque Regular") format("svg"); /* iOS 4.1- */
+    font-style: normal;
+    font-weight: normal;
+}
+
+
