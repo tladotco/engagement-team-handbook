@@ -11,6 +11,8 @@ $ npm start # dev server at http://localhost:4000
 
 ## Deploying
 
-The site is automatically deployed when commits land in `master`.
+To deploy the site, ensure your credentials are cached:
 
-If you are the maintainer of a community translation fork and would like to deploy via Netlify instead of GitHub pages, please ping @yyx990803 in an issue to request a Netlify team membership and DNS update.
+`git config --global credential.helper wincred`
+
+Then run `npm run deploy`, this will deploy the site to the `gh-pages` branch.
