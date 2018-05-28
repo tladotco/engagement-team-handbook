@@ -82,6 +82,42 @@ Below is a full example from Car Keys:
 </head>
 ```
 
+### Links
+
+Use `rel="noopener"` on external links.
+
+Avoid wrapping non-text objects within links. Having just text in a link is semantically correct, and better for SEO.
+
+``` html
+<!-- BAD -->
+<a href="/saucy">
+    <img src="saucy.jpg" />
+    <h2>This looks amazing</h2>
+</a>
+```
+
+``` html
+<!-- GOOD -->
+<article>
+    <img src="saucy.jpg" />
+    <h2><a class="link" src="/saucy">This looks amazing</a></h2>
+</article>
+```
+
+To keep the UX feel whilst retaining SEO perfection, you can set a `::before` or `::after` pseudo on the link and "overlay" a link touch point with the following CSS:
+
+``` css
+.link {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    content: '';
+}
+```
+
  ### Favicons
 
  You can generate all favocons and code from [here](https://realfavicongenerator.net).
