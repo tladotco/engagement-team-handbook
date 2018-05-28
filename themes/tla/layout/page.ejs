@@ -10,20 +10,14 @@
 <div class="content <%- page.type ? page.type + ' with-sidebar' : '' %> <%- page.type === 'guide' ? page.path.replace(/.+\//, '').replace('.html', '') + '-guide' : '' %>">
   <% if (page.type) { %>
     <% if (page.type === 'menu') { %>
-      <form id="search-form">
-        <input type="text" id="search-query-menu" class="search-query st-default-search-input">
-      </form>
-      <%- partial('partials/toc', { type: 'guide' }) %>
+      <%- partial('partials/toc', { type: 'process' }) %>
+      <%- partial('partials/toc', { type: 'best-practices' }) %>
     <% } %>
   <% } %>
   <% if (page.title.trim()) { %>
-    <h1><%- page.title %><%- page.type === 'examples' ? ' Example' : '' %></h1>
+    <h1><%- page.title %></h1>
   <% } %>
-  <% if (page.search) { %>
-    <%- partial('search-page') %>
-  <% } else { %>
     <%- page.content %>
-  <% } %>
   <% if (page.type === 'process') { %>
     <div class="guide-links">
       <% const lastPage = site.pages.find({ type: page.type, order: { $lt: page.order }}).sort({ order: -1 }).first(); %>
