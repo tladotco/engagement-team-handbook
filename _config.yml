@@ -131,3 +131,4 @@ deploy:
   type: git
   repo: https://github.com/theleadagency/engagement-team-handbook.git
   branch: gh-pages
+  root: /engagement-team-handbook/
