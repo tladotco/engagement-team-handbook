@@ -129,5 +129,5 @@ offline:
 ## Docs: http://zespia.tw/hexo/docs/deployment.html
 deploy:
   type: git
-  repository: git@github.com/theleadagency/engagement-team-handbook.git
-  branch: master
+  repo: https://github.com/theleadagency/engagement-team-handbook.git
+  branch: gh-pages
