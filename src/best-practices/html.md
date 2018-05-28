@@ -42,6 +42,7 @@ SEO considerations are important when creating any public facing site.
 
 - Avoid using `h1` elements more than once on a page
     - If you have to have more than one, stress the page title with a `strong` tag inside your `h1`
+- Every `img` must have an `[alt]` attribute.
 
 ### No Duplicate Content
 
