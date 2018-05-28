@@ -4,6 +4,8 @@ type: best-practices
 order: 200
 ---
 
+You can capture most of this by frequently running [lighthouse audits](https://developers.google.com/web/tools/lighthouse/) on your webpages.
+
 ### Standard Document Structure
 
 ``` html
