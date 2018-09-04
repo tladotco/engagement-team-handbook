@@ -5,11 +5,11 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Introduction - TLA Dev Handbook</title>
+    <title>Clean Code - TLA Dev Handbook</title>
     <meta name="description" content="A handbook for defining the processes, best practices and culture of The Lead Agency Development squads.">
 
     <meta property="og:type" content="article">
-    <meta property="og:title" content="Introduction - TLA Dev Handbook">
+    <meta property="og:title" content="Clean Code - TLA Dev Handbook">
     <meta property="og:description" content="A handbook for defining the processes, best practices and culture of The Lead Agency Development squads.">
     <meta property="og:image" content="https://https://theleadagency.github.io/engagement-team-handbook/images/logo.png") ">
 
@@ -82,7 +82,7 @@
       
     
     <li>
-      <a href="/engagement-team-handbook/best-practices/index.html" class="sidebar-link current">Introduction</a>
+      <a href="/engagement-team-handbook/best-practices/index.html" class="sidebar-link">Introduction</a>
     </li>
   
     
@@ -93,7 +93,7 @@
       
     
     <li>
-      <a href="/engagement-team-handbook/best-practices/clean-code.html" class="sidebar-link">Clean Code</a>
+      <a href="/engagement-team-handbook/best-practices/clean-code.html" class="sidebar-link current">Clean Code</a>
     </li>
   
     
@@ -191,20 +191,25 @@
     
   
   
-    <h1>Introduction</h1>
+    <h1>Clean Code</h1>
   
-    <p>We work across a lot of different systems and technologies, so it’s important we follow industry best practices that have been tinkered to work within our team. It makes us better developers and more importantly encourages consistency across projects. Every effort should be made to automate this where possible, this is why we use linters to spy out issues before they even get committed.</p>
-<p>This list isn’t exhaustive, and it isn’t final. The important thing is that these are reviewed and agreed as a team.</p>
-<p>In general:</p>
-<blockquote>
-<p>Prefer readability and maintainability over performance</p>
-</blockquote>
-<p>We can always optimise later!</p>
+    <p>We should aim to write clean code ay all times. This ensure that code will (hopefully) remain consistently maintainable over time, rather than succumbing to <em>code rot</em>. Many of the principles adhered to here come from <a href="https://github.com/josecarloscanova/books/blob/master/%5BPROGRAMMING%5D%5BClean%20Code%20by%20Robert%20C%20Martin%5D.pdf" target="_blank" rel="noopener">Clean Code</a> as written by Robert C. Martin.</p>
+<p>In summary, we have ten tips to follow taken from this <a href="https://www.youtube.com/watch?v=UjhX2sVf0eg" target="_blank" rel="noopener">video</a>.</p>
+<h2 id="10-Tips"><a href="#10-Tips" class="headerlink" title="10 Tips"></a>10 Tips</h2><h3 id="1-You’re-responsible-for-code-quality"><a href="#1-You’re-responsible-for-code-quality" class="headerlink" title="1. You’re responsible for code quality"></a>1. You’re responsible for code quality</h3><p>No one else is responsible the cod you write. Adhering to clean code principles makes like easier for you later.</p>
+<h3 id="2-Use-meaningful-names"><a href="#2-Use-meaningful-names" class="headerlink" title="2. Use meaningful names"></a>2. Use meaningful names</h3><p>Over time, more variables means more complexity. You shouldn’t need to dig through code to understand what that variable does.</p>
+<h3 id="3-Write-code-that-expresses-intent"><a href="#3-Write-code-that-expresses-intent" class="headerlink" title="3. Write code that expresses intent"></a>3. Write code that expresses intent</h3><p>Break code up into small, well named functions expresses what you’re trying to do.</p>
+<h3 id="4-Code-should-speak-for-itself"><a href="#4-Code-should-speak-for-itself" class="headerlink" title="4. Code should speak for itself"></a>4. Code should speak for itself</h3><p>Comments can be good, but they can often be misleading. Well written code, should explain itself. A comment will become dated, code won’t.</p>
+<h3 id="5-Leave-the-code-better-than-you-found-it"><a href="#5-Leave-the-code-better-than-you-found-it" class="headerlink" title="5. Leave the code better than you found it"></a>5. Leave the code better than you found it</h3><p>Following clean code doesn’t mean refactoring the whole application. When you work on a file, and spot something which could be better, fix it.</p>
+<h3 id="6-Single-responsibility-code"><a href="#6-Single-responsibility-code" class="headerlink" title="6. Single-responsibility code"></a>6. Single-responsibility code</h3><p>i.e function does 1 thing well. Less arguments = better function.<br>classes: most methods use most of the class’ properties.</p>
+<h3 id="7-Tests"><a href="#7-Tests" class="headerlink" title="7. Tests"></a>7. Tests</h3><p>Unit tests give the freedom for everyone to change code and make it better without the worry of something breaking. You should always write unit tests. If it’s hard to mock something, or test something, more often than not - your code is the issue. Try breaking it up and abstracting logic. </p>
+<h3 id="8-Work-on-big-picture-skeleton-then-fill-in-the-details-later"><a href="#8-Work-on-big-picture-skeleton-then-fill-in-the-details-later" class="headerlink" title="8. Work on big picture skeleton, then fill in the details later"></a>8. Work on big picture skeleton, then fill in the details later</h3><p>Interface first, implementation later.</p>
+<h3 id="9-Independent-components-that-can-be-used-in-different-places"><a href="#9-Independent-components-that-can-be-used-in-different-places" class="headerlink" title="9. Independent components that can be used in different places"></a>9. Independent components that can be used in different places</h3><p>Frameworks are a tool to be used, not a system to be conformed too. That is, when building components, versatility should be accounted for. Could the code I’m writing be used elsewhere?</p>
+<h3 id="10-Master-your-craft"><a href="#10-Master-your-craft" class="headerlink" title="10. Master your craft."></a>10. Master your craft.</h3><p>Practice make perfect!</p>
 
   
   <div class="footer">
     Caught a mistake or want to contribute to the documentation?
-    <a rel="noopener" href="https://github.com/theleadagency/engagement-team-handbook/blob/master/src/best-practices/index.md" target="_blank">
+    <a rel="noopener" href="https://github.com/theleadagency/engagement-team-handbook/blob/master/src/best-practices/clean-code.md" target="_blank">
       Edit this page on GitHub!
     </a>
   </div>

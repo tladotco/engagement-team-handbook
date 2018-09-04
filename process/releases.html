@@ -153,6 +153,20 @@
       
       
       
+      
+      
+      
+    
+    
+    <li>
+      <a href="/engagement-team-handbook/process/new-project.html" class="sidebar-link">New Project Check List</a>
+    </li>
+  
+    
+    
+      
+      
+      
         <li><h3>Implementation</h3></li>
       
       
@@ -162,20 +176,6 @@
     
     <li>
       <a href="/engagement-team-handbook/process/source-control.html" class="sidebar-link">Source Control</a>
-    </li>
-  
-    
-    
-      
-      
-      
-      
-      
-      
-    
-    
-    <li>
-      <a href="/engagement-team-handbook/process/new-project.html" class="sidebar-link">New Project Check List</a>
     </li>
   
     
@@ -352,7 +352,59 @@
   
     <h1>Releases</h1>
   
-    
+    <p>We aim to follow the Gitflow strategy of deploying sites in combination with CI/CD.</p>
+<h2 id="Steps"><a href="#Steps" class="headerlink" title="Steps"></a>Steps</h2><p>In general, the following steps identify what is involved in releasing a site. There will be differences between projects, especially around continuous deployment and builds. For project specific information you should check the documentation usually found in the README (in the project root). If you find a project that does not conform to the following steps, it may be worth investing the time to bring it in line with everything else.</p>
+<ol>
+<li>In Jira, Identify tickets ready to release<br> a. Issues (in header nav)<br> b. Search for Issues<br> c. Set project to the one you want to deploy<br> d. Set status to Ready to Release</li>
+<li>Create a release version<br> a. <code>Projects &gt; Project to be released</code><br> b. Releases (in side bar)<br> c. Create version, based on semantic versioning with details of that release</li>
+<li>Tag tickets ready to release, easiest way to so this<br> a. Go back to current search in step 1<br> b. <code>Tools &gt; Bulk change</code> (top right)<br> c. Select all issues to be released &gt; Next<br> d. Edit issues &gt; Next<br> e. <code>Change fix version &gt; &quot;Replace all with&quot; &gt; Set version &gt; Next</code><br> f. Confirm<br> g. Acknowledge</li>
+<li>In VSTS, create branch from <code>develop</code> called <code>release/{your version number (no v. prefix)}</code>, then create a PR from that branch into master<ul>
+<li>CD should step in and the application should be built &amp; deployed to dev then staging.</li>
+<li>This may not be the case for all projects, check the project documentation for more info.</li>
+</ul>
+</li>
+<li>Check the application is running as expected (on developments and staging environments) – URLs for staging can be found in the Azure portal<ul>
+<li>Have automated tests passed?</li>
+<li>Are the changes working as expected?</li>
+<li>Is core functionality working?</li>
+<li>Can enquiries be put through?</li>
+<li>Do the changes need to be reviewed by stakeholders before it goes out?</li>
+</ul>
+</li>
+</ol>
+<h3 id="Issues-Found"><a href="#Issues-Found" class="headerlink" title="Issues Found"></a>Issues Found</h3><ol>
+<li>Pull down the release branch, and hotfix issues</li>
+<li>Pushed changes will automatically be released again</li>
+<li>See step 5.</li>
+</ol>
+<h3 id="No-Issues-found"><a href="#No-Issues-found" class="headerlink" title="No Issues found"></a>No Issues found</h3><ol start="6">
+<li>In VSTS go to releases, approve the release waiting to go to live</li>
+<li>When the release is complete perform same staging checks on live</li>
+<li>If not happy <em>roll back the changes</em><ul>
+<li>Application releases can be done by swapping slots in Azure - see that project README for info on infrastructure names</li>
+<li>Happiness can be defined by<ul>
+<li>Functionality</li>
+<li>Conversion rates</li>
+<li>Performance</li>
+<li>Stakeholders</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Send out release email<ul>
+<li>Email group can be found in the <a href="http://wiki.theautonetwork.net/display/PM/RACI+Matrix" target="_blank" rel="noopener">RACI Matrix</a></li>
+<li>Write general description of changes</li>
+<li>Copy release notes from Jira Release</li>
+</ul>
+</li>
+<li>In Jira, go back to the “current search” from step 1. <code>Tools &gt; Bulk change</code> and transition issues to done.</li>
+<li>Finally, approve release PR into master (this can be self approved)<ul>
+<li>If you had to apply hotfixes to the release branch you will need to create another PR from the release branch down to develop</li>
+<li>Someone will need to review this hotfix PR</li>
+</ul>
+</li>
+</ol>
+
   
     <div class="guide-links">
       
